@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notepad Online – Free Online Notepad to Write, Save & Share Notes</title>
+<meta name="description" content="Notepad.is Online is a free, browser-based online notepad to write, edit, autosave, and share plain text notes instantly. No signup, no installation — open your online notepad and start typing.">
+<meta name="keywords" content="Notepad, Online Notepad, Notepad Online, free online notepad, web notepad, plain text editor, browser notepad">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://notepad.is/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Notepad Online – Free Online Notepad to Write & Save Notes">
+<meta property="og:description" content="A free Notepad Online to write, autosave, and share plain text notes from any browser. No signup required.">
+<meta property="og:url" content="https://notepad.is/">
+<meta property="og:site_name" content="Notepad Online">
+
+<!-- Schema: WebApplication -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "Notepad Online",
+  "alternateName": ["Online Notepad", "Web Notepad"],
+  "url": "https://notepad.is/",
+  "applicationCategory": "Productivity",
+  "operatingSystem": "Any (Web Browser)",
+  "browserRequirements": "Requires JavaScript. Requires HTML5.",
+  "description": "A free online notepad to write, autosave, edit and share plain text notes directly in the browser.",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "featureList": [
+    "Autosave notes in browser",
+    "Plain text editing",
+    "Word and character counter",
+    "Shareable note links",
+    "No signup required",
+    "Works offline after first load"
+  ]
+}
+</script>
+
+<!-- Schema: FAQPage -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is Notepad Online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Notepad Online is a free, browser-based plain text editor that lets you write, autosave, and share notes instantly without installing software or creating an account."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Online Notepad free?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Notepad Online is completely free to use. You can write unlimited notes, copy text, and share them without paying or signing up."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does Notepad Online save my notes automatically?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Your notes autosave in your browser's local storage, so your text is preserved when you close the tab or reload the page."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I use the Online Notepad without internet?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "After the page loads once, the Online Notepad continues to work offline because your notes are stored locally in your browser."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How is Notepad Online different from desktop Notepad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Unlike the desktop Notepad app on Windows, Notepad Online runs in any browser on any device — Windows, macOS, Linux, Android, or iOS — and syncs through shareable links instead of local files."
+      }
+    }
+  ]
+}
+</script>
+
+<style>
+  :root{
+    --bg:#fafaf7;
+    --surface:#ffffff;
+    --ink:#1a1a1a;
+    --muted:#5c5c5c;
+    --line:#e6e4dc;
+    --accent:#2a6f4e;
+    --accent-soft:#eaf3ee;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:Georgia, "Times New Roman", serif;
+    background:var(--bg);
+    color:var(--ink);
+    line-height:1.7;
+    font-size:17px;
+  }
+  header,main,footer{max-width:780px;margin:0 auto;padding:0 24px}
+  header{
+    padding-top:36px;
+    padding-bottom:20px;
+    border-bottom:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  .logo{
+    font-weight:700;
+    font-size:20px;
+    color:var(--ink);
+    text-decoration:none;
+    letter-spacing:-.3px;
+  }
+  .logo span{color:var(--accent)}
+  nav a{
+    margin-left:18px;
+    color:var(--muted);
+    text-decoration:none;
+    font-size:15px;
+  }
+  nav a:hover{color:var(--accent)}
+
+  main{padding-top:40px;padding-bottom:60px}
+  h1{
+    font-size:36px;
+    line-height:1.25;
+    margin-bottom:18px;
+    letter-spacing:-.5px;
+  }
+  h2{
+    font-size:24px;
+    margin-top:42px;
+    margin-bottom:14px;
+    letter-spacing:-.2px;
+  }
+  h3{
+    font-size:19px;
+    margin-top:28px;
+    margin-bottom:10px;
+  }
+  p{margin-bottom:16px;color:#222}
+  a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+  a:hover{color:#1f5239}
+  ul{margin:0 0 16px 22px}
+  li{margin-bottom:6px}
+
+  .cta{
+    display:inline-block;
+    margin-top:8px;
+    padding:12px 22px;
+    background:var(--accent);
+    color:#fff;
+    text-decoration:none;
+    border-radius:4px;
+    font-family:Georgia,serif;
+    font-size:16px;
+  }
+  .cta:hover{background:#1f5239;color:#fff}
+
+  .callout{
+    background:var(--accent-soft);
+    border-left:3px solid var(--accent);
+    padding:14px 18px;
+    margin:22px 0;
+    border-radius:0 4px 4px 0;
+  }
+  .callout p{margin:0;color:#1f3a2c}
+
+  .features{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px 24px;
+    margin-top:14px;
+  }
+  .feature{
+    padding:14px 0;
+    border-top:1px solid var(--line);
+  }
+  .feature strong{display:block;margin-bottom:4px}
+  .feature span{color:var(--muted);font-size:15px}
+
+  details{
+    border-bottom:1px solid var(--line);
+    padding:14px 0;
+  }
+  details summary{
+    cursor:pointer;
+    font-weight:700;
+    list-style:none;
+    position:relative;
+    padding-right:24px;
+  }
+  details summary::after{
+    content:"+";
+    position:absolute;
+    right:0;
+    top:0;
+    color:var(--accent);
+    font-size:20px;
+  }
+  details[open] summary::after{content:"–"}
+  details p{margin-top:10px;color:#333}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:24px;
+    text-align:center;
+    color:var(--muted);
+    font-size:14px;
+  }
+
+  @media (max-width:600px){
+    body{font-size:16px}
+    h1{font-size:28px}
+    h2{font-size:21px}
+    .features{grid-template-columns:1fr}
+    nav a{margin-left:12px;font-size:14px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="/" class="logo">Notepad<span>.</span>Online</a>
+  <nav aria-label="Primary">
+    <a href="#features">Features</a>
+    <a href="#how">How it Works</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+  <article>
+    <h1>Notepad Online – A Free Online Notepad for Writing & Saving Notes</h1>
+
+    <p><strong>Notepad Online</strong> is a free, browser-based plain text editor that lets you write, edit, autosave, and share notes from any device without installing software or creating an account. Whether you need a quick scratchpad for ideas, a distraction-free writing surface, or a lightweight alternative to the desktop Notepad app, the <a href="https://notepad.is/" rel="noopener" target="_blank">Online Notepad</a>  at <b>notepad.is</b> opens instantly in your browser and keeps your text safe with automatic local saving.</p>
+
+    <p>Unlike traditional desktop applications, a modern <em><a href="https://www.pinterest.com/notepadweb/">Online Notepad</a></em> works wherever you have a browser Windows, macOS, Linux, Chromebook, Android, or iOS. There are no files to manage, no updates to install, and no setup required. Just open the page and start typing. Your notes persist in the browser's local storage, so closing the tab or refreshing the page won't lose your work.</p>
+
+    <p style="text-align:center;margin:28px 0">
+      <a class="cta" href="https://notepad.is/" rel="noopener" target="_blank">Open Notepad Online →</a>
+    </p>
+
+    <div class="callout">
+      <p><strong>Quick summary:</strong> A web notepad is a browser-based text editor for writing plain text notes online. It removes the friction of desktop software while keeping the simplicity of classic Notepad no formatting clutter, no signup, no syncing headaches.</p>
+    </div>
+
+    <h2 id="what-is">What Is an Online Notepad?</h2>
+    <p>An <strong> <a href="https://substack.com/@notepadonline">Online Notepad</a></strong> is a web-based text editor that runs entirely inside your browser. It mirrors the core idea behind the classic Windows <a href="https://invitationweddingdnt.my.canva.site/notepad">Notepad</a> a clean surface for plain text but extends it with web-native conveniences like autosave, shareable links, word counting, and cross-device access. Because it lives on the web, an online notepad doesn't require a download, doesn't take up disk space, and doesn't depend on your operating system.</p>
+
+    <p>The format is intentionally simple. There are no fonts to choose, no margins to set, and no toolbars to navigate. This makes Notepad Online ideal for capturing thoughts quickly, drafting emails, jotting down meeting notes, writing code snippets, or working on text that will later move into another tool such as Markdown, Google Docs, or a CMS.</p>
+
+    <h2 id="features">Key Features of Notepad Online</h2>
+    <div class="features">
+      <div class="feature"><strong>Autosave</strong><span>Notes are saved automatically in your browser as you type.</span></div>
+      <div class="feature"><strong>No Signup</strong><span>Start writing instantly — no account or login required.</span></div>
+      <div class="feature"><strong>Cross-Device</strong><span>Works on Windows, Mac, Linux, Android, and iOS browsers.</span></div>
+      <div class="feature"><strong>Plain Text</strong><span>Distraction-free editing without rich-text clutter.</span></div>
+      <div class="feature"><strong>Word Counter</strong><span>Track word, character, and line counts in real time.</span></div>
+      <div class="feature"><strong>Shareable Notes</strong><span>Generate a unique link to share your note instantly.</span></div>
+      <div class="feature"><strong>Offline Ready</strong><span>Continue editing without an internet connection after first load.</span></div>
+      <div class="feature"><strong>Privacy First</strong><span>Notes stay on your device unless you choose to share.</span></div>
+    </div>
+
+    <h2 id="how">How to Use the Online Notepad</h2>
+    <p>Using Notepad Online takes seconds. The workflow is designed around speed and simplicity open, type, save (automatically), close. Here's the typical flow:</p>
+    <ol style="margin:0 0 16px 22px">
+      <li><strong>Open the notepad</strong> — Visit the online notepad page in any browser.</li>
+      <li><strong>Start typing</strong> — The editor focuses automatically. Begin writing your note.</li>
+      <li><strong>Autosave runs in the background</strong> — There is no save button to press.</li>
+      <li><strong>Copy or share</strong> — Copy the text to your clipboard or generate a shareable link.</li>
+      <li><strong>Return anytime</strong> — Your note remains in your browser until you clear it.</li>
+    </ol>
+
+    <h2 id="use-cases">Common Use Cases for an Online Notepad</h2>
+    <p>A free <em>Notepad Online</em> fits naturally into dozens of everyday workflows. Some of the most common ways people use a web notepad include:</p>
+    <ul>
+      <li><strong>Drafting emails</strong> outside the inbox to avoid accidental sends.</li>
+      <li><strong>Capturing meeting notes</strong> during video calls without switching apps.</li>
+      <li><strong>Stripping formatting</strong> from copied text before pasting elsewhere.</li>
+      <li><strong>Writing blog post outlines</strong>, articles, or social media captions.</li>
+      <li><strong>Saving code snippets</strong>, command-line strings, or configuration text.</li>
+      <li><strong>Brainstorming ideas</strong> in a distraction-free environment.</li>
+      <li><strong>Studying and revising</strong> — students use online notepads for quick study notes.</li>
+      <li><strong>Sharing plain text</strong> with collaborators via a single link.</li>
+    </ul>
+
+    <h2 id="vs-desktop">Notepad Online vs. Desktop Notepad</h2>
+    <p>The desktop Notepad that ships with Windows has been a staple for decades. It's lightweight, dependable, and great for opening .txt files. But it's also tied to a single device and lacks modern features like autosave, cloud sync, or sharing. A modern <strong><a href="https://sites.google.com/view/notepad-online-free/">Online Notepad</a></strong> closes those gaps.</p>
+    <p>With a <a href="https://en.wikipedia.org/wiki/Windows_Notepad">web notepad</a>, the editor is always one tab away. You don't need a Windows machine. You don't need to remember where you saved your file. And you don't need to email yourself a .txt attachment to move a note from your laptop to your phone. Open the same URL on any device and your editor is ready.</p>
+
+    <h2 id="privacy">Privacy and Note Storage</h2>
+    <p><a href="https://notepad-online-is.netlify.app/">Notepad Online</a> stores your notes locally inside your browser using local storage. That means your text never leaves your device unless you explicitly share it. There is no required login, no tracking of note content, and no server-side database of your writing. If you clear your browser data, your notes will be cleared along with it so for long-term notes, copy them out periodically or use the share feature to keep a copy.</p>
+
+    <h2 id="faq">Frequently Asked Questions</h2>
+
+    <details>
+      <summary>Is Notepad Online really free?</summary>
+      <p>Yes — Notepad Online is completely free to use. There are no premium tiers, no usage caps, and no signup walls. Open the page and start writing.</p>
+    </details>
+
+    <details>
+      <summary>Do I need to create an account to use the Online Notepad?</summary>
+      <p>No account is needed. The Online Notepad works anonymously and your notes stay in your browser unless you choose to share them.</p>
+    </details>
+
+    <details>
+      <summary>Will my notes be saved if I close the browser?</summary>
+      <p>Yes. Notepad Online uses browser local storage to persist your notes. Closing the tab, restarting the browser, or rebooting your computer will not erase them only clearing your site data will.</p>
+    </details>
+
+    <details>
+      <summary>Can I share my online notes with other people?</summary>
+      <p>Yes. You can generate a shareable link from your note and send it to anyone. They'll be able to open and read the note in their own browser.</p>
+    </details>
+
+    <details>
+      <summary>Does Notepad Online work on mobile devices?</summary>
+      <p>Yes. The online notepad is fully responsive and works on Android phones, iPhones, iPads, and tablets through any modern mobile browser.</p>
+    </details>
+
+    <details>
+      <summary>Is Notepad Online a replacement for Microsoft Word or Google Docs?</summary>
+      <p>No, and that's intentional. Notepad Online is a plain text editor focused on speed and simplicity. For rich formatting, collaboration features, and document layout, tools like Word or Google Docs are more appropriate.</p>
+    </details>
+
+    <h2 id="cta">Start Writing on Notepad Online</h2>
+    <p>Whether you're capturing a fleeting idea, drafting a long-form post, or simply need a clean surface to think on, a free Online Notepad is the fastest way to get there. Open it once, and it'll be ready every time you return.</p>
+    <p style="text-align:center;margin-top:22px">
+      <a class="cta" href="https://notepad.is/" rel="noopener" target="_blank">Open Your Online Notepad →</a>
+    </p>
+  </article>
+</main>
+
+<footer>
+  <p>© <span id="y"></span> Notepad Online · A free online notepad for writing, saving, and sharing plain text notes.</p>
+  <script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</footer>
+
+</body>
+</html>
